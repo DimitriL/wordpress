@@ -1,30 +1,21 @@
 {
-  "name": "johnpbloch/wordpress",
-  "description": "WordPress is web software you can use to create a beautiful website or blog.",
-  "keywords": [
-    "wordpress",
-    "blog",
-    "cms"
-  ],
-  "type": "package",
-  "homepage": "http://wordpress.org/",
-  "license": "GPL-2.0+",
-  "authors": [
+  "repositories": [
     {
-      "name": "WordPress Community",
-      "homepage": "http://wordpress.org/about/"
+      "type": "composer",
+      "url": "https://wpackagist.org"
     }
   ],
-  "support": {
-    "issues": "http://core.trac.wordpress.org/",
-    "forum": "http://wordpress.org/support/",
-    "wiki": "http://codex.wordpress.org/",
-    "irc": "irc://irc.freenode.net/wordpress",
-    "source": "http://core.trac.wordpress.org/browser"
-  },
   "require": {
-    "php": ">=5.3.2",
-    "johnpbloch/wordpress-core-installer": "~0.2",
-    "johnpbloch/wordpress-core": "dev-master"
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.2",
+    "wpackagist-plugin/advanced-custom-fields": "*",
+    "wpackagist-plugin/better-wp-security": "*",
+    "wpackagist-plugin/post-duplicator": "*",
+    "wpackagist-plugin/post-type-archive-links": "*",
+    "wpackagist-plugin/wordpress-seo": "*"
+    
+  },
+  "extra": {
+    "wordpress-install-dir": "wp"
   }
 }
